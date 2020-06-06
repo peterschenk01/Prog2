@@ -1,7 +1,7 @@
 public class MagicSquare {
 	
 	/*
-	 * Erzeugt das Beispiel aus der Aufgabe und gibt es zurück.
+	 * Erzeugt das Beispiel aus der Aufgabe und gibt es zurÃ¼ck.
 	 */
 	public static int[][] getExample(){
 		int[][] example = {{8, 1, 6}, {3, 5, 7}, {4, 9, 2}};
@@ -9,7 +9,7 @@ public class MagicSquare {
 	}
 	
 	/*
-	 * Überprüft ob das übergebene Zweidimensionale Array, wenn es nicht null ist und ein Quadrat ist, ob es ein magisches Quadrat ist.
+	 * ÃœberprÃ¼ft ob das Ã¼bergebene Zweidimensionale Array, wenn es nicht null ist und ein Quadrat ist, ob es ein magisches Quadrat ist.
 	 */
 	public static boolean isMagic(int[][] quadrat) {
 		if(quadrat == null)
@@ -23,7 +23,7 @@ public class MagicSquare {
 		
 		int summe = 0;
 		for(int i = 0; i < quadrat.length; i++) {
-			summe += quadrat[i][0];
+			summe += quadrat[0][i];
 		}
 		
 		return checkHorizontal(quadrat, summe) && checkVertikal(quadrat, summe) && checkDiagonal(quadrat, summe) && checkAntiDiagonal(quadrat, summe);
@@ -31,7 +31,7 @@ public class MagicSquare {
 	}
 	
 	/*
-	 * Überprüft ob die Summen der Zahlen in den einzelnen Zeilen mit der Summe aus der ersten Zeile übereinstimmen.
+	 * ÃœberprÃ¼ft ob die Summen der Zahlen in den einzelnen Zeilen mit der Summe aus der ersten Zeile Ã¼bereinstimmen.
 	 */
 	public static boolean checkHorizontal(int[][] quadrat, int summe) {
 		int horizontalsumme = 0, zaehler = 0;
@@ -50,7 +50,7 @@ public class MagicSquare {
 	}
 	
 	/*
-	 * Überprüft ob die Summen der Zahlen in den einzelnen Spalten mit der Summe aus der ersten Zeile übereinstimmen.
+	 * ÃœberprÃ¼ft ob die Summen der Zahlen in den einzelnen Spalten mit der Summe aus der ersten Zeile Ã¼bereinstimmen.
 	 */
 	public static boolean checkVertikal(int[][] quadrat, int summe) {
 		int vertikalsumme = 0, zaehler = 0;
@@ -69,7 +69,7 @@ public class MagicSquare {
 	}
 	
 	/*
-	 * Überprüft ob die Summe der Zahlen in der Diagonalen mit der Summe aus der ersten Zeile übereinstimmt.
+	 * ÃœberprÃ¼ft ob die Summe der Zahlen in der Diagonalen mit der Summe aus der ersten Zeile Ã¼bereinstimmt.
 	 */
 	public static boolean checkDiagonal(int[][] quadrat, int summe) {
 		int diagonalsumme = 0;
@@ -83,7 +83,7 @@ public class MagicSquare {
 	}
 	
 	/*
-	 * Überprüft ob die Summe der Zahlen in der AntiDiagonalen mit der Summe aus der ersten Zeile übereinstimmt.
+	 * ÃœberprÃ¼ft ob die Summe der Zahlen in der AntiDiagonalen mit der Summe aus der ersten Zeile Ã¼bereinstimmt.
 	 */
 	public static boolean checkAntiDiagonal(int[][] quadrat, int summe) {
 		int diagonalsumme = 0, b = 0;
