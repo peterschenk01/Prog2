@@ -23,7 +23,7 @@ public class Bisection {
 			else r = c;
 		}
 		System.out.printf("Ergebnis: f(%.6f) = %.6f\n", c, f(c));
-
+		System.out.println("hallo");
 	}
 
 }
