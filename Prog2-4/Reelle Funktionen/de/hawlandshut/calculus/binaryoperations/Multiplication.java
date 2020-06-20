@@ -28,6 +28,10 @@ public class Multiplication extends BinaryOperation implements Differentiable{
 		return "(" + getLeft().toString() + ")" +  " * " + "(" + getRight().toString() + ")";
 	}
 	
+	/*
+	 * Gibt die Ableitung einer Multiplikation nach den bekannten Ableitungsregeln zurück.
+	 * Liefert DiffException falls eine der beiden Reellen Funktionen Differentiable nicht implementiert.
+	 */
 	@Override
 	public Addition derive() throws DiffException{
 		if(!(getLeft() instanceof Differentiable) || !(getRight() instanceof Differentiable))

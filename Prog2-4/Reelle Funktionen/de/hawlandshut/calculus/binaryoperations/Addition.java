@@ -28,6 +28,10 @@ public class Addition extends BinaryOperation implements Differentiable{
 		return "(" + getLeft().toString() + ")" +  " + " + "(" + getRight().toString() + ")";
 	}
 	
+	/*
+	 * Gibt die Ableitung einer Addition nach den bekannten Ableitungsregeln zurück.
+	 * Liefert DiffException falls eine der beiden Reellen Funktionen Differentiable nicht implementiert.
+	 */
 	@Override
 	public Addition derive() throws DiffException{
 		if(!(getLeft() instanceof Differentiable) || !(getRight() instanceof Differentiable))
