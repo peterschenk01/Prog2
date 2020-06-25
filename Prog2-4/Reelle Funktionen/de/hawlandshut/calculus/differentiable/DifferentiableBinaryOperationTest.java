@@ -28,6 +28,7 @@ public class DifferentiableBinaryOperationTest {
       return true;
     }
 
+
   }
 
   @Test(expected = DiffException.class)

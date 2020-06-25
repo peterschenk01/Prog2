@@ -1,12 +1,13 @@
 package de.hawlandshut.calculus;
 
 import de.hawlandshut.calculus.realfunctions.*;
+import de.hawlandshut.calculus.binaryoperations.*;
+import de.hawlandshut.calculus.differentiable.*;
 
 public class Main {
 
-	public static void main(String[] args) {
-		Plotter.plot(new Exp(), new Sine(1, 1), new Cosine(1, 1), new Sine(2, 2).derive(),new Log());
-
+	public static void main(String[] args)throws DiffException {
+		Plotter.plot(new Addition(new Constant(1), new Log()).derive());
 	}
 
 }

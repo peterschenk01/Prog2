@@ -2,9 +2,7 @@ package de.hawlandshut.calculus.binaryoperations;
 
 import de.hawlandshut.calculus.realfunctions.RealFunction;
 
-/*
- * Abstrakte Klasse von der Binäre Operationen abgeleitet werden können.
- */
+// Abstrakte Klasse von der Binäre Operationen abgeleitet werden können.
 public abstract class BinaryOperation extends RealFunction {
 	
 	private final RealFunction left, right;

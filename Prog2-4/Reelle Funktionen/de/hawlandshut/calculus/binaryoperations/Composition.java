@@ -16,6 +16,7 @@ public class Composition extends BinaryOperation implements Differentiable{
 	@Override
 	public boolean inDomain(double x) {
 		return getRight().inDomain(x) && getLeft().inDomain(getRight().evaluateAt(x));
+		// x muss im Definitionsbereich der rechten Funktion liegen und der Wert der rechten Funktion an der Stelle x muss im Definitionsbereich der linken Funktion liegen
 	}
 	
 	@Override

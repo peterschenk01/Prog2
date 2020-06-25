@@ -20,7 +20,7 @@ public class CubicPolynomial extends RealFunction implements Differentiable{
 	
 	@Override
 	public boolean inDomain(double x) {
-		return true;
+		return true; // immer true weil der Definitionsbereich die Reellen Zahlen sind
 	}
 	
 	@Override

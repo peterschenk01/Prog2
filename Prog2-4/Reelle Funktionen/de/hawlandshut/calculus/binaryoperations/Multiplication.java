@@ -15,7 +15,7 @@ public class Multiplication extends BinaryOperation implements Differentiable{
 	
 	@Override
 	public boolean inDomain(double x) {
-		return getLeft().inDomain(x) && getRight().inDomain(x);
+		return getLeft().inDomain(x) && getRight().inDomain(x); // x muss in den Definitionsbereichen beider Funktionen liegen
 	}
 	
 	@Override
