@@ -8,9 +8,6 @@ public class Composition extends BinaryOperation implements Differentiable{
 	
 	public Composition(RealFunction left, RealFunction right) {
 		super(left, right);
-		
-		if(left == null || right == null)
-			throw new IllegalArgumentException("Es müssen zwei Funktionen übergeben werden!");
 	}
 	
 	@Override
